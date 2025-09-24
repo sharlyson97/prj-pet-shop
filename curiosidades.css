@@ -1,0 +1,85 @@
+h2{
+    background-color:saddlebrown ;
+    color: #fff;
+    font-size: 35px;
+    letter-spacing: .1em;
+    width: 470px;
+    background-image:url(imagens/importante-saber.jpg), url(imagens/back-bolinha.gif);
+    background-repeat: no-repeat,repeat;
+    background-position: center right,center center;
+    padding: 61px 400px 61px 100px;
+
+}
+figure{
+    border: saddlebrown solid thin;
+    text-align: center;
+    padding: 20px 0 0;
+    border-radius: 35px 35px 0 0 ;
+
+}
+figcaption{ 
+    background-color: saddlebrown;
+    padding: 7px 0;
+    color: #fff;
+    font-size: 1.5em;
+}
+ul li{
+    list-style-type: none;
+    list-style-image: url(imagens/ossinho.png);
+    list-style-position: inside;
+    margin: 20px 0;
+}
+/*ESTILIZANDO A LISTA DE DESCRIÇÃO*/
+
+dt{
+    background-color: saddlebrown;
+    color: #fff;
+    padding: 7px;
+}
+dd{
+    margin-top: 2px;
+    border: saddlebrown solid;
+    margin-bottom: 30px;
+    border-radius: 0 0 25px 25px;
+
+    /*VALORES DO PADDING
+    PRIMEIRO VALOR SUPERIOR SEGUNDO VLO ESQUERDA
+    TERCEIRO VALOR É INFERIOR E O QUARTO É A DIREITA */
+    padding: 20px 20px;
+}
+dd a[target="_blank"]{
+    text-decoration: none;
+    color: saddlebrown;
+    font-weight: bold;
+    padding: 10px;
+    display: ;
+}
+dd a[target="_blank"]:hover{
+text-decoration: underline;
+}
+
+dd a[href="#topo"]{
+    text-decoration: none;
+    color: saddlebrown;
+    font-weight: bold;
+    padding: 7px 0 7px 30px;
+    background:url(imagens/seta-voltar.png) no-repeat,left,center;
+}
+dd a[href="#topo"]:hover{
+    text-decoration: underline;
+    background: url(imagens/seta-voltar-hover.png) no-repeat left center;
+
+}
+ol{
+    list-style-type: none;
+    white-space: pre;/*controle de espaços em brancos dos elementos*/
+    line-height: .9em;
+    counter-reset: contador;/*variavel de contagem*/
+}
+ol li:before{
+    /*incrementar/acrecentar mais uma variavel*/
+    counter-increment: contador;
+    /*usar o numero do contador como conteudo nas linhas*/
+    content: "Questão" counter(contador)"\261B";
+
+}

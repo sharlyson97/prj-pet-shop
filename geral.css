@@ -1,0 +1,38 @@
+/*ESTILO GERAL PARA TODOS OS ARQUIVOS HTML*/
+/*MENOS OS ARQUIVOS CURIOSIDADES E QUEM SOMOS*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: burlywood;
+}
+
+h1{
+    font-family: Comfortaa, sans-serif;
+    color: saddlebrown;
+    font-size: 2.5em;
+    border-bottom: saddlebrown solid thin;
+    padding-bottom: 7px;
+}
+
+h2{
+    font-size: 1.75em;
+    color: #fff;
+}
+
+p{
+    font-size: 1.1em;
+    line-height: 1.3em;
+    text-align: justify;
+
+}
+p:first-line{
+    font-size: 1.2em;
+    font-variant:small-caps;
+    font-style:italic;
+    font-weight: bolder;
+}
+hr{
+    border-color: burlywood;
+    border-style: double;
+    border-width:5px;
+
+}

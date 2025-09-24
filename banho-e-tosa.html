@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANHO E TOSA-PETSHOP</title>
+</head>
+<body>
+    <p><a href="index.html">voltar ao início</a></p>
+
+    <h1>Agendamento para banho e tosa</h1>
+    <h2>faça seu agendamento com pelo menos 48 horas de antecedência</h2>
+
+    <!--INICIO DO FORMULARIO-->
+    <form action="obrigado.html" method="post" id="contato" >
+	<!--DADOS DO TUTOR-->
+	<fieldset id="ident_dono"><!--TAG USADA PARA AGRUPAR ELEMENTOS-->
+        <legend>Indentificação do tutor do animal</legend>
+        <p><label for="nome">Nome:</label>
+        <input type="text" name="nome tutor" size="35" maxlength="35" placeholder="Digite o Nome completo do tutor do animal"></p>
+        <p><label for="endereco">Endereço:</label>
+        <input type="text" name="endereco" size="50" maxlength="65" placeholder="Digite o Endereço"></p>
+        <p><label for="cep">CEP:</label>
+        <input type="text" name="cep" size="10" maxlength="9" placeholder="999999-999">
+        </p>
+        <p><label for="email">E-mail:</label>
+        <input type="text" name="email" size="40" maxlength="50" placeholder="Dgite o E-mail"  </p>
+        <p><label for="telcel">Tel/Cel:</label>
+        <input type="text" name="telcel" size="12" maxlength="13" placeholder="99 99999-9999"  </p>
+</fieldset>
+        <!--DADOS DO ANIMAL-->
+<fieldset id="ident_animal">
+        <legend>Dados do animal</legend>
+        <p><label for="nome_animal">Nome:</label>
+        <input type="text" name="nome_animal" size="25" maxlength="20" placeholder="Digite o Nome do animal"></p>
+        <p></p>
+        <p><label for="nome">Nome:</label>
+        <input type="text" name="nome tutor" size="35" maxlength="35" placeholder="Digite o
+        Nome completo do tutor do animal"></p>
+        <p>Porte do animal: <br>
+        <input type="radio" name="porte_animal" value="pequeno">Pequeno <br>
+        <input type="radio" name="porte_animal" value="medio">Médio <br>
+        <input type="radio" name="porte_animal" value="grande">Grande 
+        </p>
+        <p>
+        Tipo de tosa:
+        <select name="tipo_tosa">
+            <option value="">Nenhuma</option>
+            <option value="padrao">Tosa Padrão</option>
+            <option value="higienica">Tosa Higiênica</option>
+            <option value="tesoura">Tosa na Tesoura</option>
+            <option value="raca">Tosa da Raça</option>
+            <option value="filhote">Tosa de Filhote</option></p>
+        </select>
+        <p>
+          Observações:
+          <textarea name="obs" id=""></textarea>
+        </p>    
+</fieldset>
+<!--DATA DE AGENDAMENTO-->
+<fieldset id="agendamento">
+    <legend>Data do Agendamento (não atendenmos em feriados, domingos e na segunda</legend>
+    <p>
+    Indique os dias da semana de sua preferencia <br>
+    <input type="checkbox" name="dia_semana" value="terca">Teça-feira <br>
+    <input type="checkbox" name="dia_semana" value="quarta">Quarta-feira <br>
+    <input type="checkbox" name="dia_semana" value="quinta">Quinta-feira <br>
+    <input type="checkbox" name="dia_semana" value="sexata">Sexta-feira <br>
+    <input type="checkbox" name="dia_semana" value="sabado">Sábado
+    </p>
+    <p>
+    Primeira opção de data:
+    <input type="date" name="pdata">
+    </p>
+    <p>
+    Segunda opção de data:
+    <input type="date" name="sdata">
+    </p>
+</fieldset>
+
+<input type="submit" value="Enviar">
+    <input type="reset" value="Limpar">
+</form>
+</body>
+</html>

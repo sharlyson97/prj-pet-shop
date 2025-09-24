@@ -1,0 +1,17 @@
+/*ESTRUTURA*/
+
+body{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*PAGINA QUEM SOMOS*/
+.quemsomos img{
+    float: left;/*IMAGEM FLUTUANTE A ESQUERDA*/
+    margin: 0 10px 10px 0;
+    padding: 10px;
+    border: saddlebrown solid 2px;
+    background-color: wheat;
+    border-radius: 10px;
+}
